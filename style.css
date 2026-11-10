@@ -1,0 +1,222 @@
+
+/* ================================
+   GANESH HOMELY FOODS
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #fffaf2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #176b45;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #fff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ffcc66;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 420px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1546833999-b9f581a1996d")
+    center/cover no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    background-color: #f28c28;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d96c0b;
+    transform: translateY(-3px);
+}
+
+/* Food Section */
+
+.food-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.food-section h2 {
+    color: #176b45;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+/* Food Cards */
+
+.food-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.food-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    color: #176b45;
+    margin: 15px 0 5px;
+}
+
+.food-card p {
+    padding: 5px 15px;
+    color: #666;
+}
+
+.price {
+    color: #e87517;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+}
+
+/* About Section */
+
+.about {
+    background-color: #f4eee2;
+    padding: 55px 10%;
+    text-align: center;
+}
+
+.about h2 {
+    color: #176b45;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 17px;
+}
+
+/* Contact Section */
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #176b45;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #174d35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 8px;
+        display: inline-block;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .food-section h2 {
+        font-size: 26px;
+    }
+}
